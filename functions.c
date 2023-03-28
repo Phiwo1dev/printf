@@ -58,8 +58,8 @@ int print_string(va_list types, char buffer[],
 
 	if (width > length)
 	{
-	if (flags & F_MINUS)
-	{
+		if (flags & F_MINUS)
+		{
 		write(1, &str[0], length);
 	for (i = width - length; i > 0; i--)
 		write(1, " ", 1);
@@ -67,13 +67,12 @@ int print_string(va_list types, char buffer[],
 	}
 	else
 	{
-	for (i = width - length; i > 0; i--)
+		for (i = width - length; i > 0; i--)
 		write(1, " ", 1);
 		write(1, &str[0], length);
 		return (width);
 	}
 	}
-
 	return (write(1, str, length));
 }
 /************************* PRINT PERCENT SIGN *************************/
