@@ -14,23 +14,9 @@
  */
 int handle_write_char(char c, char buffer[],
 		int flags, int width, int precision, int size)
-<<<<<<< HEAD
 { /* char is stored at left and paddind at buffer's right */
-=======
-<<<<<<< HEAD
-
-{/* char is stored at left and padding at buffer's right */
-		int i = 0;
-		char padd = ' ';
-
-		UNUSED(precision);
-		UNUSED(size);
-=======
-{
->>>>>>> 7118da89ec259e80e6cfcd725abad2bf3b80d777
 	int i = 0;
 	char padd = ' ';
->>>>>>> 28bd1b81dda006280d753692c91170ae2c46ff57
 
 	UNUSED(precision);
 	UNUSED(size);
@@ -100,12 +86,7 @@ int write_number(int is_negative, int ind, char buffer[],
  */
 int write_num(int ind, char buffer[],
 		int flags, int width, int prec,
-<<<<<<< HEAD
 	int length, char padd, char extra_c)
-=======
-		int length, char padd, char extra_c)
->>>>>>> 7118da89ec259e80e6cfcd725abad2bf3b80d777
-
 {
 	int i, padd_start = 1;
 
@@ -162,12 +143,7 @@ int write_num(int ind, char buffer[],
  */
 int write_unsgnd(int is_negative, int ind,
 		char buffer[],
-<<<<<<< HEAD
-	int flags, int width, int precision, int size)
-=======
 		int flags, int width, int precision, int size)
-
->>>>>>> 7118da89ec259e80e6cfcd725abad2bf3b80d777
 {
 	/* The number is stored at the bufer's right and starts at position i */
 	int length = BUFF_SIZE - ind - 1, i = 0;
